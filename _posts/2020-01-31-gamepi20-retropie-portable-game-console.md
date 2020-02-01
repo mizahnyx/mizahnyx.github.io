@@ -91,4 +91,4 @@ input_menu_toggle_btn = "0"
 input_y_btn = "4"
 ```
 
-![GamePi20 running](/assets/img/2020-01-31-gamepi20.jpg)
+![GamePi20 running](/assets/img/2020-01-31-gamepi20.jpg)	
