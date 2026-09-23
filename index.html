@@ -1,23 +1,183 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sam Jenkins — Platform / AI-Infrastructure Engineer</title>
+  <meta name="description" content="Sam Jenkins — Platform / AI-Infrastructure Engineer (Go · Rust · Kubernetes · LLM ops). Also game UI &amp; C++ craft. I ship playable proof, not promises.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#131009">
+  <link rel="canonical" href="https://mizahnyx.github.io/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-<div class="home">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sam Jenkins">
+  <meta property="og:url" content="https://mizahnyx.github.io/">
+  <meta property="og:title" content="Sam Jenkins — Platform / AI-Infrastructure Engineer">
+  <meta property="og:description" content="Go · Rust · Kubernetes · LLM ops. Also game UI &amp; C++ craft — I ship playable proof, not promises.">
+  <meta property="og:image" content="https://mizahnyx.github.io/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Gladiator management UI demo — dark bronze interface with roster and stat panels — captioned Sam Jenkins, Platform / AI-Infrastructure Engineer.">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sam Jenkins — Platform / AI-Infrastructure Engineer">
+  <meta name="twitter:description" content="Go · Rust · Kubernetes · LLM ops. Also game UI &amp; C++ craft — I ship playable proof, not promises.">
+  <meta name="twitter:image" content="https://mizahnyx.github.io/assets/og-image.jpg">
 
-  <h1 class="page-heading">Posts</h1>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <header class="site-head">
+    <div class="wrap head-row">
+      <a class="mono" href="#top" aria-label="Sam Jenkins — back to top">SJ</a>
+      <nav aria-label="Site sections">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <main id="main">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="hero-kicker">Sam Jenkins · Mexico City</p>
+        <h1>Platform / AI-Infrastructure Engineer — <span class="accent">Go · Rust · Kubernetes · LLM ops</span></h1>
+        <p class="hero-sub">Also: game UI &amp; C++ craft — I ship playable proof, not promises.</p>
+        <div class="hero-cta">
+          <a class="btn btn--solid" href="#work">See the work</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <!-- Work -->
+    <section id="work" class="sec">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow" aria-hidden="true">I</p>
+          <h2>Selected work</h2>
+        </div>
+
+        <article class="card card--feature">
+          <div class="card-head">
+            <h3>Godot 4 — Gladiator Management UI (style sample)</h3>
+            <span class="badge">PLAYABLE</span>
+          </div>
+          <p>Designed and implemented a game start screen UI in Godot 4.x — clean data views, hover/selection states, XDG-packaged and deployed to the web. Built as a live proof for a client proposal.</p>
+
+          <figure class="video-frame" style="margin-inline:0">
+            <video muted loop autoplay playsinline preload="metadata" width="1600" height="900"
+                   poster="assets/godot-marcus.webp"
+                   aria-label="Silent video walkthrough of the Gladiator Management UI start screen">
+              <source src="assets/demo_video.mp4" type="video/mp4">
+              Your browser does not support embedded video.
+            </video>
+          </figure>
+          <p class="media-caption">Silent walkthrough above — play it for real at <a href="https://godotgladiatordemo.otakulove.moe/">godotgladiatordemo.otakulove.moe</a>.</p>
+
+          <div class="card-actions">
+            <a class="btn btn--solid" href="https://godotgladiatordemo.otakulove.moe/">Open the playable demo</a>
+          </div>
+
+          <ul class="shots" aria-label="Demo screenshots — open full size in a new tab">
+            <li><a href="assets/godot-marcus.webp" target="_blank" rel="noopener"><img src="assets/godot-marcus.webp" alt="Demo UI: gladiator detail view for Marcus Ferox (murmillo) with roster and stat panels" loading="lazy" width="1600" height="900"></a></li>
+            <li><a href="assets/godot-cassia.webp" target="_blank" rel="noopener"><img src="assets/godot-cassia.webp" alt="Demo UI: gladiator detail view for Cassia Vulpe (retiarius)" loading="lazy" width="1600" height="900"></a></li>
+            <li><a href="assets/godot-draba.webp" target="_blank" rel="noopener"><img src="assets/godot-draba.webp" alt="Demo UI: gladiator detail view for Draba of Syracuse (thraex)" loading="lazy" width="1600" height="900"></a></li>
+            <li><a href="assets/godot-titus.webp" target="_blank" rel="noopener"><img src="assets/godot-titus.webp" alt="Demo UI: gladiator detail view for Titus Labienus (hoplomachus)" loading="lazy" width="1600" height="900"></a></li>
+            <li><a href="assets/godot-aia.webp" target="_blank" rel="noopener"><img src="assets/godot-aia.webp" alt="Demo UI: gladiator detail view for Aia of Numidia (dimachaerus)" loading="lazy" width="1600" height="900"></a></li>
+          </ul>
+          <p class="media-caption">Five character data views — Marcus, Cassia, Draba, Titus, Aia. Click any to open full size.</p>
+        </article>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-head">
+              <h3>miku_screensaver</h3>
+            </div>
+            <p>Native C++ xscreensaver port of a three.js MMD demo: PMD/VMD binary parsers, Bullet soft-body physics, CCD IK, X11 embedding, full XDG packaging — with a 37-item engineering log.</p>
+            <div class="ph" role="img" aria-label="Placeholder — screenshot capture pending">
+              <span>Screenshot capture pending</span>
+            </div>
+            <p class="card-actions"><a class="btn btn--ghost" href="https://github.com/mizahnyx/miku_screensaver">View on GitHub</a></p>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h3>Platform lab (K8s/k3s)</h3>
+              <span class="badge badge--wip">IN PROGRESS</span>
+            </div>
+            <p>Coming soon.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h3>MCP server (Go)</h3>
+              <span class="badge badge--wip">IN PROGRESS</span>
+            </div>
+            <p>Coming soon.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="sec">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow" aria-hidden="true">II</p>
+          <h2>Skills</h2>
+        </div>
+        <p class="skills">Go · Rust · Kubernetes · Docker · Python · C++ · TypeScript/Node · LLM ops · Terraform · Linux</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="sec">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow" aria-hidden="true">III</p>
+          <h2>About</h2>
+        </div>
+        <p class="about">Self-taught senior engineer (~25 years) based in Mexico City. I build backend systems, platform infrastructure and AI-enabled workflows — and I believe the best proof of competence is a running demo, not a bullet list.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="sec">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow" aria-hidden="true">IV</p>
+          <h2>Contact</h2>
+        </div>
+        <p class="contact-mail"><a href="mailto:sjenkinsc@gmail.com">sjenkinsc@gmail.com</a></p>
+        <p class="contact-gh"><a href="https://github.com/mizahnyx">github.com/mizahnyx</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p>© 2026 Sam Jenkins. Hand-built — one HTML file, plain CSS, no framework, no tracking.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Minimal JS: stop autoplaying video for reduced-motion users.
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('video[autoplay]').forEach(function (v) {
+        v.removeAttribute('autoplay');
+        v.pause();
+      });
+    }
+  </script>
+</body>
+</html>
