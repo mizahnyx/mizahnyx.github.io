@@ -334,6 +334,8 @@ p.card-actions { margin-block-start: 1.1rem; }
   border-color: var(--bronze);
   transform: scale(1.015);
 }
+.shots--single { grid-template-columns: 1fr; }
+@media (min-width: 720px) { .shots--single { grid-template-columns: 1fr; max-width: 720px; } }
 
 /* ---------- skills ---------- */
 .skills {
